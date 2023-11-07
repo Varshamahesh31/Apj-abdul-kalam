@@ -1,83 +1,217 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
         <title>HTML TRIBUT PAGE</title>
+
         <style>
         h5.center{
             text-align: center;
-            font-size: 16px;
             font-family: arial;
         }
         h1.center{
-            font-size: 14px;
             text-align: center;
             font-family: arial;
         }
         p{
-            font-size: 12px;
             font-family: Arial;
+        }
+        *{
+            text-decoration: none;
+        }
+        .navdiv{
+            display: flex;align-items: center; justify-content: space-between;
+        }
+        li{
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        header{
+            background: #f3bbbb;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .Logo{
+            color: rgb(44,44,44);
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+        }
+        .nav ol{
+            display: flex;
+            list-style: none;
+        }
+        .btn{
+            position: relative;
+            -webkit-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            display: none;
+           }
+           .btn::before{
+            content: '\f0c9';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family:'Font Awsome 5 Free';
+            font-weight: 700;
+           }
+           .nav ol li{ margin: lem; }
+           .nav ol li a{
+           text-decoration: none ;
+           padding: 0.2em 1.2em 0.9em 1.2em;
+           border-radius: 10px 10px 0 0;
+           color: rgb(39 39 39);
+           transition: all, 4s;
+           position: relative;
+           z-index: 1;
+           }
+           .nav ol li a::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 41px;
+            border-radius: 10px 10px 0 0;
+            background: #853333    
+            transform-origin: bottom;
+            background: linear-gradient;
+            transform: scaleY(0,05);
+            z-index: -1;
+            transitin: all, 4s;  
+           }
+           .nav ol li a:hover::before{transform: scaleY(0,05);}
+           .nav ol li a:hover{color: whitel}
+           @media(max-width:1200px){
+           .btn{
+            display: felx;
+            z-index: 100;
+           }
+           header{
+            justify-content: space-between;
+            padding: 0.2em;
+           }
+           .nav{
+            width: 100%;
+            position: absolute ;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            background: #f8f8f8;
+            transform: translate(-110%)
+            transition: all .4s;
+           }
+           input: :checked~ .nav{
+            transform: translateY(0%)
+           }
+           input: checked::before{
+            content: '\f00d';
+           }
+        }
+        @media (max-width:700px){
+            .nav ol{
+                flex-direction:column;
+                text-align: center;
+            }
         }
         </style>
     </head>
     <body>
+        <header>
+                <p class="logo"></a></p>
+                <input type="checkbox" name="" class="btn">
+                <div class="nav">
+                    <ol>
+                   <li><a href="#">Biograhy</a></li>
+                    <li><a href="early life martin.html">Early life</a></li>
+                    <li><a href="accomplishments of martin.html">Accomplishments</a></li>
+                    <li><a href="personallife of martin.html">Personal life</a></li>
+                    <li><a href="quotes of martin.html">Quotes</a></li>
+                    <li><a href="photos of martin.html">Photos</a></li>
+                    <li><a href="Legacyandimpact.html">Legacy and impact</a></li>
+                    <li><a href="timeline of martin.html">Timeline</a></li>
+                    <li><a href="contributins of martin.html">Contributions</a></li>
+                    <li><a href="links.html">Links and resources</a></li>
+                    <li><a href="contact.html">Contact information</a></li>
+                    </ol>
+                    </div>
+                </header>
         <h5 class="center"><b>MARTHIN LUTHER KING JR.</b></h5>
         <center><img src="https://th.bing.com/th/id/OIP.97odm68mMp3_JPaK9fCWcgHaEy?w=287&h=185&c=7&r=0&o=5&pid=1.7.jpg" height="300" width="500"></center>
         <p>Martin Luther King Jr. (born Michael King Jr.; January 15, 1929 – April 4, 1968) was an American Baptist minister, activist, and political philosopher who was one of the most prominent leaders in the civil rights movement from 1955 until his assassination in 1968. A Black church leader and a son of early civil rights activist and minister Martin Luther King Sr., King advanced civil rights for people of color in the United States through nonviolence and civil disobedience. Inspired by his Christian beliefs and the nonviolent activism of Mahatma Gandhi, he led targeted, nonviolent resistance against Jim Crow laws and other forms of discrimination in the United States.</p><p>King participated in and led marches for the right to vote, desegregation, labor rights, and other civil rights.[1] He oversaw the 1955 Montgomery bus boycott and later became the first president of the Southern Christian Leadership Conference (SCLC). As president of the SCLC, he led the unsuccessful Albany Movement in Albany, Georgia, and helped organize some of the nonviolent 1963 protests in Birmingham, Alabama. King was one of the leaders of the 1963 March on Washington, where he delivered his "I Have a Dream" speech on the steps of the Lincoln Memorial. The civil rights movement achieved pivotal legislative gains in the Civil Rights Act of 1964, Voting Rights Act of 1965, and the Fair Housing Act of 1968.</p>
-        <P><b>Biography of Martin Luther King Jr.</b></P>
+        <comic sans><b>Biography of Martin Luther King Jr.</b></comic>
+        <p><b>Born:</b>15 January 1929
+
+            <b>Children:</b>Martin Luther King III, Yolanda King, Bernice King, Dexter King
+            
+            <b>Spouse:</b>Coretta scott King
         <nav>
             <ul>
                 <a href="biography of martin.html">See more</a>
             </ul>
-        </nav>
-        <p><b>Early life of Martin Luther King Jr.</b></p>
+        </nav></p>
+        <comic sans><b>Early life of Martin Luther King Jr.</b></comic>
         <nav>
             <ul>
                 <a href="early life martin.html">See more</a>
             </ul>
         </nav>
-        <p><b>Accomplishments of Martin Luther King Jr.</b></p>
+        <comic sans><b>Accomplishments of Martin Luther King Jr.</b></comic>
         <nav>
             <ul>
                 <a href="accomplishments of martin.html">See more</a>
             </ul>
         </nav>
-        <p><b>Personal life of Martin Luther King Jr.</b></p>
+        <comic sans><b>Personal life of Martin Luther King Jr.</b></comic>
         <nav>
             <ul>
                 <a href="personallife of martin.html">See more</a>
             </ul>
         </nav>
-        <p><b>Quotes of Martin Luther King Jr.</b></p>
+       <comic sans><b>Quotes of Martin Luther King Jr.</b></comic>
         <nav>
             <ul>
                 <a href="quotes of martin.html">See more</a>
             </ul>
         </nav>
-        <p><b>Photos of MArtin Luther King Jr.</b></p>
+        <comic sans><b>Photos of Martin Luther King Jr.</b></comic>
         <nav>
             <ul>
                 <a href="photos of martin.html">See more</a>
             </ul>
         </nav>
-        <p><b>Legacy and impact of Martin Luther King Jr.</b></p>
+        <comic sans><b>Legacy and impact of Martin Luther King Jr.</b></comic>
         <nav>
             <ul>
                 <a href="Legacyandimpact.html">See more</a>
             </ul>
         </nav>
-        <p><b>Timeline of Martin Luther King Jr.</b></p>
+        <comic sans><b>Timeline of Martin Luther King Jr.</b></comic>
         <nav>
             <ul>
                 <a href="timeline of martin.html">See more</a>
             </ul>
         </nav>
-        <p><b>Contibutions of Martin Luther King Jr.</b></p>
+        <comic sans><b>Contibutions of Martin Luther King Jr.</b></comic>
         <nav>
             <ul>
                 <a href="contributins of martin.html">See more</a>
             </ul>
         </nav>
-        <p><b>Links and resources </b></p>
+        <comic sans><b>Links and resources </b></comic>
         <nav>
             <ul>
                 <a href="links.html">See more</a>
